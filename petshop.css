@@ -125,4 +125,6 @@ margin: 1% 0 0;
   .card-sobre{
     width: 70%;
   }
+  .card-sobre icon{
+    flex-direction: collumn;
 }
