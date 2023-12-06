@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilo/estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/icon.png">
+	<title>Bichos&Cia</title>
+</head>
+<body>
+ 
+  <section class="cabecalho">
+  <div>
+      <a href="home.html"><img src="img/logomod..png" class="logo" alt="logo"></a>
+      </div>
+      <div class="sessoes">
+          <ul>
+              <a href="home.html">HOME</a>
+              <a href="#equipe">EQUIPE</a>
+              <a href="#exames">EXAMES</a>
+              <a href="#sobre">SOBRE</a>
+              <a href="petshop.html">PET SHOP</a>
+              <a href="login.php">AGENDAR</a>
+          </ul>
+      </div>
+  </section>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/fotos/1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/3.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/4.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/5.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/6.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/fotos/7.png" style="width:100%">
+</div>
+
+</div>
+
+<div style="text-align:center" class="block">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+</section>
+<section>
+        <div class="boasvindas">
+            <h1>SEUS MELHORES AMIGOS SE TORNAM NOSSOS TAMBÉM </h1>
+            <br>
+            <p>
+            &nbsp; A nossa clínica conta com uma equipe especializada e pronta para atender seu pet com atendimento 24 horas.<br>
+            &nbsp;  Localizada na região de Garça-SP, oferecendo exames laboratoriais, banho e tosa, medicamentos, ultrassonografia, cirurgia, Raio-x, Pet Shop e um Taxi Dog.</p>
+        </div>
+</section>
+
+<section id="equipe">
+<div class="equipe">
+<p class="equipe-titulo">NOSSA EQUIPE</p>
+<p class="equipe-descricao">Nossos profissionais são qualificados e preparados para realizar o melhor atendimento ao seu Pet.</p>
+</div>
+
+<div class="cards">
+  <section class="card-sobre">
+      <div class="icon">
+          <img src="img/equipe/Daniel.png" alt="Daniel">
+      </div>
+      <h3>DR. Daniel Soares Tozzetti</h3>
+  </section>
+  <section class="card-sobre">
+      <div class="icon">
+          <img src="img/equipe/Vinicius.png" alt="Vinicius">
+      </div>
+      <h3>Vinicius Toffoli</h3>
+  </section>
+  <section class="card-sobre">
+      <div class="icon">
+          <img src="img/equipe/Jonas.png" alt="Jonas">
+      </div>
+      <h3>DR. Jonas Bregadioli</h3>
+  </section>
+  <section class="card-sobre">
+    <div class="icon">
+        <img src="img/equipe/Gisele.png" alt="Gisele">
+    </div>
+    <h3>Gisele Caixeta Chehade</h3>
+</section>
+</div>
+</section>
+
+<section id="exames">
+<div class="exames-conteudos">
+<div class="exames">
+  <p class="exames-titulo">Por que devo realizar os exames do meu pet em laboratório veterinário?</p>
+  <p class="exames-descricao">Existem várias razões pelas quais é recomendado realizar os exames de animais em laboratório veterinário. Algumas delas incluem:</p>
+  <p class="lista"><img src="img/correto.png"><b>Especialização:</b> os profissionais que trabalham em laboratórios veterinários são especializados na realização de exames para animais e as caracteríticas de cada animal.</p>
+  <p class="lista"><img src="img/correto.png"><b>Equipe treinada:</b> a equipe é treinada para lidar com as amostras de animais de forma segura e eficiente, garantindo que os resultados sejam precisos.</p>
+  <p class="lista"><img src="img/correto.png"><b>Interpretação de resultados:</b> um veterinário especialista pode interpretar de forma segura os resultados obtidos.</p>
+  <p class="lista"><img src="img/correto.png"><b>Monitoramento da saúde animal:</b> realizar exames perióticos no seu animal em laborátorio veterinário garante o diagnóstico precose de doenças aumentando as chances de bons resultados no tratamento.</p>
+</div>
+
+<div class="separar"></div>
+<div class="exames-confira">
+<div class="exames-realizados">
+  <section class="card-exames">
+    <p>Hemograma Completo (Mamíferos)</p>
+  </section>
+  <section class="card-exames">
+    <p>Hemograma Completo (Silvestres)</p>
+  </section>
+  <section class="card-exames">
+    <p>Bioquímicas</p>
+  </section>
+  <section class="card-exames">
+    <p>Testes de compatibilidade sanguínea</p>
+  </section>
+  <section class="card-exames">
+    <p>Análises Citopatológicas</p>
+  </section>
+  <section class="card-exames">
+    <p>Parasitólogicas</p>
+  </section>
+  <section class="card-exames">
+    <p>Pesquisas de hemopárasitas</p>
+  </section>
+</div>
+  <div class="exames-realizados-dois">
+  <section class="card-exames">
+    <p>Biópsias</p>
+  </section>
+  <section class="card-exames">
+    <p>Urinálises</p>
+  </section>
+  <section class="card-exames">
+    <p>Imunologia e Sorologia</p>
+  </section>
+  <section class="card-exames">
+    <p>Culturas e Urocultura com Antibiograma</p>
+  </section>
+  <section class="card-exames">
+    <p>PCRS</p>
+  </section>
+  <section class="card-exames">
+    <p>Titulação de Raiva</p>
+  </section>
+  <section class="card-exames">
+    <p>Citologia de Ciclo Estral</p>
+  </section>
+</div>
+</div>
+</div>
+</section>
+
+<section id="sobre">
+
+  <div class="quem-somos">
+    <aside><p class="quem-somos-titulo">QUEM SOMOS</p>
+    
+      <p class="quem-somos-descricao">Trazemos o interesse, um desejo que vem de dentro. Nossa vontade de ajudar é perene e persiste no tempo. É algo instintivo, vivo, presente. É ela o que nos motiva. Nossa expertise está no mundo pet, cuidamos de cada detalhe, fazendo tudo o que estiver ao nosso alcance para que pets, tutores e colaboradores se sintam em casa. Saúde é prevenção, cuidado, informação. É a busca constante para melhorar a qualidade de vida. Este é o nosso trabalho, e assim nos conectamos com pets e seus tutores.</p></aside>
+    
+    </div>
+
+  <div class="nossos-servicos">
+    <h1>NOSSOS SERVIÇOS</h1>
+    <div class="tres">
+      <div class="consulta">
+        <center><img src="img/quem-somos/consulta.png" width="80px" height="80px"></center>
+        <h2>CONSULTA VETERINÁRIA</h2>
+        <p>Por contar com um time senior, nossas consultas contemplam o acolhimento do tutor, aspectos comportamentais do animal, exames clínicos, emergência e gestão da vacinação.</p>
+      </div>
+    
+      <div class="taxidog">
+        <center><img src="img/quem-somos/taxidog.png" width="80px" height="80px"></center>
+        <h2>TAXI DOG</h2>
+        <p>O serviço de taxi dog existe para facilitar a vida dos responsáveis pelos Pets. Transportamos todos os pets com segurança e conforto em caixas específicas.</p>
+      </div>
+    
+      <div class="estetica">
+        <center><img src="img/quem-somos/estetica.png" width="80px" height="80px"></center>
+        <h2>CENTRO DE ESTÉTICA</h2>
+        <p>O banho e tosa é essencial para manter a saúde e o bem estar dos animais. Utilizamos produtos de primeira linha, para que os pets saiam daqui bonitos, cheirosos, bem tratados e muito felizes!</p>
+      </div>
+    </div>
+    </section>
+  <section id="medicamentos">
+  <div class="medicamentos">
+  <p>PET SHOP E MEDICAÇÕES</p>
+</div>
+  <div class="medicamentos-titulo">
+ 
+  </div>
+  <div class="medicamentos-descricao">
+    <p>OFERECEMOS BRINQUEDOS, MEDICAMENTOS, RACÕES, PETISCOS, CAMAS E ROUPAS PARA  O CONFORTO DO SEU PET.</p>
+  </div>
+
+  <div class="medicamentosimg" style="">
+    <img src="img/medicamentos/medicamentos.png"></div>
+
+    <div class="Localizacao">
+      <p>Localização</p>
+    </div>
+    <div class="Localizacao-titulo">
+      <p><b>Endereço:</b> Av. Dr. Labieno da Costa Machado, 5 - Labienópolis, Garça - SP, 17400-000</p>
+    </div>
+      <div class="Localizacao-descricao">
+      <p><b>Horário de funcionamento:</b></p>
+      <p class="dias">Segunda-feira<br>Terça-feira <br>Quarta-feira <br>Quinta-feira <br>Sexta-feira <br>Sábado <br>Domingo</p>
+    </div>  
+    <div class="Localizacao-descricao2"style="width: 216px;">
+      <p><br>08:00 –18:00 <br>08:00 –18:00 <br>08:00 –18:00 <br>08:00 –18:00 <br>08:00 –18:00 <br>08:00 –12:00 <br>Fechado</p>
+    </div>
+    <div class="Localizacao-descricao3">
+    <p><b>Telefone: Geral</b>(14) 3471-0824</p>
+  </div>
+  <div class="Localizacaomaps">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3693.533813851196!2d-49.65289772387692!3d-22.21981621368273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bfb8d878a8388f%3A0x69d5ba72092e6521!2sBichos%20%26%20Cia%20Cl%C3%ADnica%20Veterin%C3%A1ria%20e%20PetShop!5e0!3m2!1spt-BR!2sbr!4v1699633382297!5m2!1spt-BR!2sbr" 
+  width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="footer">
+  <footer><p><b>2023 Bichos&Cia - Todos os direitos reservados</b></p><br>
+  <a href="https://www.facebook.com/petshopbichosecia.bichosecia"><img src="img/face.png" width="31em" height="31em"></a>
+  <a href="https://instagram.com/bichoseciapetshop"><img src="img/insta.png" width="31em" height="31em"></a>
+  <a href="https://wa.me/5514981676847"><img src="img/whats.png" width="31em" height="31em"></a>
+  </footer>
+  </div>
+</section>
+</body>
+</html>
