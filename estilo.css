@@ -1,0 +1,535 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ 
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+ 
+.cabecalho{
+    max-width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #ffffff ;
+    box-shadow: 0 0 1rem 0 #7a93ba;
+}
+ 
+.logo {
+    padding: 5% 5%;
+    width: 70%;
+    height: 100%;  
+}
+ 
+.sessoes{
+    padding: 5% 0  0 ;
+    max-width: 0 50%;
+    position: relative;
+    margin-left: auto;
+}
+
+.sessoes a{
+    color: #2c5597;
+    text-decoration: none;
+    font-family: aileron regular, sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    padding: 20px;
+}
+
+.sessoes a:hover{
+    color: #7a93ba;
+}
+
+
+.slideshow-container { 
+width: 50%;
+padding: 80px 55px 20px 100px;
+float: left;
+}
+
+.boasvindas{
+    width: 50%;
+    float: right;
+    padding: 5% 2% 0 0 ;
+}
+.boasvindas h1{
+	font-size: 370%;
+	color: rgb(14, 77, 158);
+	font-family: 'Montserrat', sans-serif;
+    padding-right: 6%;
+}
+
+.boasvindas p {
+    font-size: 140%;
+	color: rgb(15, 15, 15);
+	line-height: 130%;
+    padding-right: 6%;
+	text-align: justify;
+    font-family: system-ui;
+    font-weight: 266;
+}
+
+@media only screen and (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
+    .sessoes {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .slideshow-container,
+    .boasvindas {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .boasvindas h1{
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .boasvindas p{
+        font-size: 100%;
+    }
+
+}
+
+.equipe{
+	padding: 9% 0 1%;
+	clear: both;
+	text-align: center;
+    font-family: system-ui;
+}
+
+.equipe-titulo{
+	font-size: 250%;
+}
+
+.equipe-descricao{
+	font-size: 150%;
+	margin-left: 5%;
+	margin-right: 5%;
+    margin: 1%;
+    font-weight: 366;
+}
+.cards{
+    display:flex ;
+    padding: 5%;
+
+}
+
+.card-sobre{
+    text-align: center;
+    font-family: system-ui;
+    padding: 0 4%;
+    width: 50%;
+    height: 100%;
+
+}
+
+.icon img{
+    width: 80%;
+    height: 80%;
+    margin: 8%;
+}
+
+/* Estilos para telas grandes */
+.equipe {
+    padding: 9% 0 1%;
+    clear: both;
+    text-align: center;
+    font-family: system-ui;
+  }
+  
+  .equipe-titulo {
+    font-size: 250%;
+  }
+  
+  .equipe-descricao {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin: 1%;
+    font-weight: 366;
+  }
+  
+  .cards {
+    display: flex;
+    padding: 5%;
+  }
+  
+  .card-sobre {
+    text-align: center;
+    font-family: system-ui;
+    padding: 0 4%;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .icon img {
+    width: 80%;
+    height: 80%;
+    margin: 8%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-sobre {
+      width: 80%;
+      margin-bottom: 5%;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .equipe-titulo {
+      font-size: 200%;
+    }
+  
+    .equipe-descricao {
+      font-size: 100%;
+    }
+  }
+  
+.exames-conteudos{
+    display: flex;
+}
+.exames{
+    width: 55%;
+	padding: 5% 9% 0;
+}
+
+.exames-titulo{
+	font-size: 200%;
+    font-family: system-ui;
+}
+.exames-descricao {
+    padding: 2% 0 2%;
+    font-size: 150%;
+    font-family: system-ui;
+}
+
+.lista{
+    text-align: justify;
+    padding: 2% 0;
+    font-size: 130%;
+    font-weight: 366;
+    line-height: 120%;
+    font-family: system-ui;
+}
+.lista img{
+    height: 4%;
+    width: 4%;
+    margin: 0 1% 1%;
+}
+
+.exames-confira{
+    display: flex; 
+    padding: 7% 0 10%;  
+    
+}
+.exames-realizados section.card-exames{
+    flex-direction: column;
+    text-align: center;
+    background: #F0F8FF;
+    padding: 1.0rem 2.0rem;
+    border-radius: 1.6rem;
+    margin: 5%;
+    font-size: 100%;
+}
+
+.exames-realizados-dois section.card-exames{
+    flex-direction: column;
+    text-align: center;
+    background: #F0F8FF;
+    padding: 1.0rem 2.0rem;
+    border-radius: 1.6rem;
+    margin: 6%;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .exames-conteudos {
+      flex-direction: column;
+    }
+  
+    .exames {
+      width: 95%;
+      padding: 10% 5% 0;
+      font-size: 75%;
+    }
+  
+    .exames-realizados section.card-exames,
+    .exames-realizados-dois section.card-exames {
+      margin: 4%;
+    }
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .exames-titulo {
+      font-size: 180%;
+    }
+  
+    .exames-descricao {
+      font-size: 130%;
+    }
+  
+    .lista {
+      font-size: 120%;
+    }
+  
+    .lista img {
+      height: 3%;
+      width: 3%;
+    }
+  }
+
+
+.quem-somos{
+	padding: 5% 10% 0;
+    font-family: system-ui;
+    width: 120%;
+    display: inline;
+    text-align: center;
+}
+
+.quem-somos-titulo{
+	font-size: 200%;
+    color: #2c5597;
+    font-weight: bold;
+}
+
+.quem-somos-descricao{
+    text-align: justify;
+    padding: 2% 10% 0;
+    margin-left: 12rem;
+    margin-bottom: 3%;
+	font-size: 140%;
+    font-weight: 366;
+    width: 80%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .quem-somos-descricao{
+        margin-left: 0.3rem;
+        font-size: 100%;
+        width: 100%;
+    }
+}
+
+.nossos-servicos{
+    padding: 5%;
+    margin-left: 2%;
+    text-align: center;
+}
+
+.nossos-servicos h1{
+text-align: center;
+
+}
+
+.nossos-servicos h1{
+    color: #2c5597;
+    font-family: system-ui;
+    padding: 0 0 4%;
+    text-align: center;
+}
+
+.nossos-servicos h2{
+    padding: 5% 0;
+    text-align: center;
+    color: #2c5597;
+    font-family: system-ui;
+}
+
+.tres {
+    display: flex;
+    justify-content: space-around; /* ou justify-content: space-between; */
+  }
+
+  .consulta,
+  .taxidog,
+  .estetica {
+    width: 25%;
+    text-align: center;
+    font-weight: 366;
+  }
+
+
+@media screen and (max-width: 768px) {
+   .tres{
+    flex-direction: column;
+   }
+
+   .consulta,
+   .taxidog,
+   .estetica {
+    padding: 5%;
+    width: 95%;
+    text-align: center;
+    font-weight: 366;
+  }
+
+}
+
+.medicamentos{
+    margin-top: 7%;
+    font-size: 200%;
+    color: #2c5597;
+    font-weight: bold;
+    text-align: center;
+    font-family: system-ui;
+    padding-bottom: 5%;
+}
+
+.medicamentos-descricao{
+    margin-top: 1%;
+    width: 30%;
+    margin-left: 17%;
+    font-size: 190%;
+    font-family: system-ui;
+    font-weight: 366;
+    text-align: center;
+    padding: 5% 0 5% 0 ;
+}
+
+.medicamentosimg img
+{
+    margin-top: -20%;
+    margin-left: 57%;
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    #medicamentos{
+        flex-direction: column;
+    }.medicamentos{
+        font-size: 190%;
+        padding: 5% 0 0;
+    }
+    .medicamentos-descricao{
+        width: 85%;
+        font-size: 140%;
+        margin-left: 7% ;
+    }
+    .medicamentosimg img{
+        width: 90%;
+        margin-left: 4%;
+        margin-top: -5%;
+    
+    }
+}
+.Localizacao{
+    font-weight: bold;
+    width: 34%;
+    margin-top: 5%;
+    margin-left: 58%;
+    font-size: 250%;
+    font-family: system-ui;
+    text-align: center;
+    color: #2c5597;
+}
+
+.Localizacao-titulo{
+   margin-top: 1%;
+    width: 25%;
+    margin-left: 62%;
+    font-size: 130%;
+    font-family: system-ui;
+    font-weight: 366;
+}
+
+.Localizacao-descricao{
+    margin-top: 5%;
+    width: 25%;
+    margin-left: 62%;
+    font-size: 130%;
+    font-family: system-ui;
+    font-weight: 366;
+}
+.Localizacao-descricao .dias{
+    padding: 10% 0 0;
+}
+.Localizacao-descricao2{
+   
+    width: 25%;
+    margin-left: 78%;
+    margin-top: -11.4%;
+    font-size: 130%;
+    font-family: system-ui;
+    font-weight: 366;
+}
+
+.Localizacao-descricao3{
+    margin-top: 3%;
+    width: 25%;
+    margin-left: 65%;
+    font-size: 130%;
+    font-family: system-ui;
+    font-weight: 366;
+}
+
+.Localizacaomaps{
+    margin-top: -31%;
+    margin-left: 9%;
+    width:50px;
+    height:5;
+}
+
+.footer{
+    text-align: center;
+    font-size: 120%;
+    margin-top: 9%;
+}
+
+.footer a{
+    padding: 2% 0.3% 3%;
+}
+
+@media screen and (max-width: 768px) {
+    .Localizacao{
+        width: 34%;
+        margin-left: 2%;
+        font-size: 230%;
+        font-family: system-ui;
+    }
+    .Localizacao-titulo{
+         width: 98%;
+         margin-left: 2%;
+         font-size: 130%;
+         font-family: system-ui;
+     }
+     .Localizacao-descricao{
+        width: 65%;
+        margin-left: 2%;
+        font-size: 130%;
+    }
+    .Localizacao-descricao2{
+        margin-left: 40%;
+        margin-top: -54%;
+        font-size: 130%;
+    }
+    .Localizacao-descricao3{
+        padding: 5% 0 50% ;
+        margin-left: 2%;
+        width: 80%;
+    }
+    .Localizacaomaps iframe{
+        width:100px; 
+        height:600px;
+        width: 690%
+    };
+}

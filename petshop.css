@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.cabecalho{
+  max-width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #ffffff ;
+  box-shadow: 0 0 1rem 0 #7a93ba;
+}
+
+.logo {
+  padding: 5% 5%;
+  width: 70%;
+  height: 100%;  
+}
+
+.sessoes{
+  padding: 5% 0  0 ;
+  max-width: 0 50%;
+  position: relative;
+  margin-left: auto;
+}
+
+.sessoes a{
+  color: #2c5597;
+  text-decoration: none;
+  font-family: aileron regular, sans-serif;
+  font-weight: bold;
+  font-size: 110%;
+  padding: 20px;
+}
+
+.sessoes a:hover{
+  color: #7a93ba;
+}
+
+.cards{
+display:flex ;
+
+}
+.cards2{
+display:flex ;
+padding: 5%;
+
+}
+.card-sobre{
+text-align: center;
+font-family: system-ui;
+padding: 0 4%;
+width: 50%;
+height: 100%;
+
+}
+.icon img{
+width: 50%;
+height: 50%;
+}
+.icon2 img{
+width: 130%;
+height: 130%;
+margin-left: -12%;
+}
+.icon3 img{
+width: 60%;
+height: 60%;
+margin-top: 37%;
+margin-left: -4%;
+}
+.icon4 img{
+width: 50%;
+height: 50%;
+margin-top: 32%;
+margin-left: -4%;
+}
+
+.icon5 img{
+width: 80%;
+height: 50%;
+margin-top: 32%;
+margin-left: -4%;
+}
+
+.icon6 img{
+width: 80%;
+height: 50%;
+margin-top: 32%;
+margin-left: -4%;
+}
+.icon7 img{
+width: 80%;
+height: 50%;
+margin-top: 32%;
+margin-left: -4%;
+}
+.icon8 img{
+width: 80%;
+height: 50%;
+margin-top: 32%;
+margin-left: -4%;
+}
+.descricao{
+margin-top: 2%;
+}
+.link{
+text-decoration: none;
+margin: 1% 0 0;
+}
+
+@media screen and (max-width:768px){
+  .cards2{
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-sobre{
+    width: 70%;
+  }
+}
